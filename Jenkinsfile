@@ -33,7 +33,6 @@ pipeline {
     stage('Ceritication') {
       steps {
         input(message: 'Are you sure to certify this?', ok: 'Yes')
-        waitUntil()
       }
     }
 
